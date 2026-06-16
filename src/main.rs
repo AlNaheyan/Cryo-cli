@@ -1,6 +1,8 @@
 mod commands;
 mod token_store;
 mod config;
+mod client;
+mod secret;
 use std::io::{self, Write};
 use clap::{Parser, Subcommand};
 use terminal_menu:: {
