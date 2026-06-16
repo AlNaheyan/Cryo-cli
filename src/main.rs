@@ -1,5 +1,6 @@
 mod commands;
 mod token_store;
+mod config;
 use std::io::{self, Write};
 use clap::{Parser, Subcommand};
 use terminal_menu:: {
