@@ -38,12 +38,12 @@ pub fn info_cmd(args: InfoArgs) {
             .expect("Failed to fetch management info");
 
         println!("-- File Info --");
-        println!("Download count : {}", info.download_count());
-        println!("Download limit : {}", info.download_limit());
-        println!("Download left  : {}", info.download_left());
+        println!("Download count: {}", info.download_count());
+        println!("Download limit: {}", info.download_limit());
+        println!("Download left: {}", info.download_left());
     }
 
     println!("-- File Metadata --");
-    println!("File name      : {}", meta.metadata().name());
-    println!("Content length : {}", meta.size());
+    println!("File name: {}", meta.metadata().name());
+    println!("Content length: {}", meta.size());
 }

@@ -26,3 +26,6 @@ owner_token.json
 
 # ignore all downloaded files
 /downloads
+
+# local Claude Code guidance - do not track
+CLAUDE.local.md
