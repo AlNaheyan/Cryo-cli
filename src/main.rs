@@ -1,4 +1,8 @@
 mod commands;
+mod token_store;
+mod config;
+mod client;
+mod secret;
 use std::io::{self, Write};
 use clap::{Parser, Subcommand};
 use terminal_menu:: {
@@ -7,7 +11,7 @@ use terminal_menu:: {
 
 
 #[derive(Parser)]
-#[clap(name = "Cryo", version = "0.1", author = "al", about = "A CLI for file sharing using ffsend")]
+#[clap(name = "Cryo", version, author = "al", about = "A CLI for secure file sharing using ffsend")]
 struct Cli {
     #[clap(subcommand)]
     command: Commands,
@@ -49,7 +53,7 @@ fn main() {
         }
     }
 }
-// TODO: Add info to menu
+
 fn run_menu() {
     loop {
         let main_menu = menu(vec![
